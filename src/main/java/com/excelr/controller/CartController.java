@@ -19,7 +19,7 @@ import com.excelr.repository.CartRepository;
 
 @RestController
 @RequestMapping("/cart")
-@CrossOrigin
+@CrossOrigin("https://carshowrooms.netlify.app")
 public class CartController {
 
 	@Autowired

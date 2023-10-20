@@ -18,7 +18,7 @@ import jakarta.persistence.criteria.Order;
 
 @RestController
 @RequestMapping("/orders")
-@CrossOrigin
+@CrossOrigin("https://carshowrooms.netlify.app")
 public class OrderController {
 	
 

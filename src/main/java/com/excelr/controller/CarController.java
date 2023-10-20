@@ -15,7 +15,7 @@ import jakarta.persistence.Id;
 
 @RestController
 @RequestMapping("/car")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://carshowrooms.netlify.app")
 public class CarController {
 
 	@Autowired 

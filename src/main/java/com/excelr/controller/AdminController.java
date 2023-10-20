@@ -12,7 +12,7 @@ import com.excelr.repository.AdminRepository;
 
 @RestController
 @RequestMapping("/car/admin")
-@CrossOrigin
+@CrossOrigin("https://carshowrooms.netlify.app")
 public class AdminController {
 
 	@Autowired 

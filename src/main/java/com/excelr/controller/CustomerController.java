@@ -14,7 +14,7 @@ import com.excelr.repository.CustomerRepository;
 
 @RestController
 @RequestMapping("/car/customer")
-@CrossOrigin
+@CrossOrigin("https://carshowrooms.netlify.app")
 public class CustomerController {
 
 	@Autowired
