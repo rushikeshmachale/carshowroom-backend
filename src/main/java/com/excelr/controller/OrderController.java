@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import com.excelr.entity.Orders;
 import com.excelr.repository.OrderRepository;
-import com.excelr.service.EmailService;
 
 import jakarta.persistence.criteria.Order;
 
@@ -26,9 +25,6 @@ public class OrderController {
 	@Autowired
 	OrderRepository repo;
 	
-
-	@Autowired 
-	EmailService emailService;
 	
 	@PostMapping("/add")
 	public Orders addOrder(@RequestBody Orders orders) {
@@ -81,15 +77,4 @@ public class OrderController {
 	
 	
 	
-	@PostMapping("/mail")
-	public String sendMail() {
-				int num = (int) Math.floor(Math.random()*1000000);
-				
-				emailService.sendMessaeg("tatabye0909@gmail.com","Hello user...",""
-						+ "Welcome to our online car showroom mart,"
-						+ "You make succefull order. You can track your order status by visiting our website."
-						+ "Thank you. "
-						+ " Please visit us again... "+num);
-				return "email sended";
-			}
 }
